@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/alarm_activity_back"
+    tools:context=".AlarmActivatedActivity">
+
+    <TextView
+        android:id="@+id/tv_time_current"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="50dp"
+        android:gravity="top|center"
+        android:text="19:14"
+        android:textSize="80sp"
+        android:textColor="@color/white"
+        android:textStyle="normal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dismiss"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_dismiss_back"
+        android:minWidth="210dp"
+        android:minHeight="70dp"
+        android:textColor="#FF0000"
+        android:text="Dismiss"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
